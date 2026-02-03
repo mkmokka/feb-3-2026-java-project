@@ -44,8 +44,8 @@ async function loginWithPassword() {
   const password = document.getElementById("logPass").value;
   try {
     await signInWithEmailAndPassword(auth, email, password);
-    alert("Login successful! Redirecting to game...");
-    window.location.href = "game.html";
+    alert("Login successful! Redirecting to homepage...");
+    window.location.href = "homepage.html";
   } catch (err) {
     alert(err.message);
   }
@@ -78,6 +78,7 @@ if (window.location.pathname.includes('finish.html')) {
 
 window.registerWithEmail = registerWithEmail;
 window.loginWithPassword = loginWithPassword;
+
 
 
 
